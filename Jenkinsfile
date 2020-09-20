@@ -68,7 +68,7 @@ pipeline {
                 sh 'dotnet pack vtb.Auth.Permissions/vtb.Auth.Permissions.csproj --no-build --no-restore -p:PackageVersion=${VERSION} -o . -c Release'
                 archiveArtifacts artifacts: '*.nupkg', fingerprint: true
 
-                sh 'dotnet nuget push "**/*.nupkg" -s BaGet -k ${BAGET_API_KEY}'
+                sh 'dotnet nuget push "vtb.Auth.Permissions.${VERSION}.nupkg" -s BaGet -k ${BAGET_API_KEY}'
             }
         }
 
@@ -80,7 +80,7 @@ pipeline {
                 sh 'dotnet pack vtb.Auth.Jwt/vtb.Auth.Jwt.csproj --no-build --no-restore -p:PackageVersion=${VERSION} -o . -c Release'
                 archiveArtifacts artifacts: '*.nupkg', fingerprint: true
 
-                sh 'dotnet nuget push "**/*.nupkg" -s BaGet -k ${BAGET_API_KEY}'
+                sh 'dotnet nuget push "vtb.Auth.Jwt.${VERSION}.nupkg" -s BaGet -k ${BAGET_API_KEY}'
             }
         }
     }

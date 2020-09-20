@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vtb.Auth.Jwt", "vtb.Auth.Jwt\vtb.Auth.Jwt.csproj", "{204794E3-22F6-4AD3-9F34-811DC54DDADE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vtb.Auth.Jwt", "vtb.Auth.Jwt\vtb.Auth.Jwt.csproj", "{204794E3-22F6-4AD3-9F34-811DC54DDADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vtb.Auth.Jwt.Tests", "vtb.Auth.Jwt.Tests\vtb.Auth.Jwt.Tests.csproj", "{4C4B8326-754F-4C0D-8FE3-B581732AD77A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vtb.Auth.Jwt.Tests", "vtb.Auth.Jwt.Tests\vtb.Auth.Jwt.Tests.csproj", "{4C4B8326-754F-4C0D-8FE3-B581732AD77A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vtb.Auth.Permissions", "vtb.Auth.Permissions\vtb.Auth.Permissions.csproj", "{CF2D2963-4DD9-4AD7-9A5F-CFCC07A6FF7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vtb.Auth.Permissions", "vtb.Auth.Permissions\vtb.Auth.Permissions.csproj", "{CF2D2963-4DD9-4AD7-9A5F-CFCC07A6FF7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{204794E3-22F6-4AD3-9F34-811DC54DDADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,17 +55,11 @@ Global
 		{CF2D2963-4DD9-4AD7-9A5F-CFCC07A6FF7A}.Release|x64.Build.0 = Release|Any CPU
 		{CF2D2963-4DD9-4AD7-9A5F-CFCC07A6FF7A}.Release|x86.ActiveCfg = Release|Any CPU
 		{CF2D2963-4DD9-4AD7-9A5F-CFCC07A6FF7A}.Release|x86.Build.0 = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|x64.Build.0 = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Debug|x86.Build.0 = Debug|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|x64.ActiveCfg = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|x64.Build.0 = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|x86.ActiveCfg = Release|Any CPU
-		{5CEF7269-8D17-4BFF-ABA4-E894FA5E8028}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6756A62-8D29-44DD-AF6D-A9414D94CF46}
 	EndGlobalSection
 EndGlobal

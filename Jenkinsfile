@@ -83,6 +83,18 @@ pipeline {
                 sh 'dotnet nuget push "vtb.Auth.Jwt.${VERSION}.nupkg" -s BaGet -k ${BAGET_API_KEY}'
             }
         }
+
+        stage('Publish Tenant') {
+            steps {
+                sh 'dotnet publish vtb.Auth.Tenant/vtb.Auth.Tenant.csproj --no-build --no-restore -o ./out -c Release'
+                archiveArtifacts artifacts: 'out/*', fingerprint: true
+
+                sh 'dotnet pack vtb.Auth.Tenant/vtb.Auth.Tenant.csproj --no-build --no-restore -p:PackageVersion=${VERSION} -o . -c Release'
+                archiveArtifacts artifacts: '*.nupkg', fingerprint: true
+
+                sh 'dotnet nuget push "vtb.Auth.Tenant.${VERSION}.nupkg" -s BaGet -k ${BAGET_API_KEY}'
+            }
+        }
     }
 
     post {

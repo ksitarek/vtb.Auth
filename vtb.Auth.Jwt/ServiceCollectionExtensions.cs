@@ -51,7 +51,7 @@ namespace vtb.Auth.Jwt
                 var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
                 var httpContext = httpContextAccessor.HttpContext;
 
-                if(httpContext != null)
+                if (httpContext != null && httpContext.User.Identity.IsAuthenticated)
                 {
                     var userClaims = httpContext.User.Claims;
                     var userIdClaim = userClaims.First(x => x.Type == "user_id");

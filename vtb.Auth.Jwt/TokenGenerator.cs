@@ -71,6 +71,8 @@ namespace vtb.Auth.Jwt
             var issuedAt = _systemClock.UtcNow.UtcDateTime;
             var expires = issuedAt.Add(_jwtOptions.Value.JwtTokenLifespan);
 
+            claims.Add(new Claim("token_id", Guid.NewGuid().ToString()));
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
